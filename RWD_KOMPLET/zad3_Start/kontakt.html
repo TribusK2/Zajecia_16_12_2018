@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kontakt</title>
+    <script>
+        /*var equalColumns= function() {
+        var columns = document.getElementsByClassName('col'), height= 0;
+        //Reset the height of all the columns so thatwe can recalculate max height 
+        for(var i = 0;i < columns.length; i++) {
+            columns[i].style.height="auto";
+        }
+        //Loop through columns and find max height 
+        for(var i = 0;i < columns.length; i++) {
+            if (height < columns[i].clientHeight) {
+            height = columns[i].clientHeight;
+        }
+        }
+        //Apply the maxheight to allcolumns
+        for(var i = 0;i < columns.length; i++) {
+            columns[i].style.height = height + "px";
+        }
+        }
+        window.onload = function (){
+            //Initially set thecolumn heights
+            equalColumns();
+        }
+        //Update column heights on browser resize
+        window.addEventListener("resize",equalColumns,true);*/
+    </script>
+    <style>
+    /*div {
+        float: left;
+        width: 25%;
+    }*/
+    #onas {
+        background-color: blanchedalmond;
+    }
+    #zarzad {
+        background-color: darkkhaki;
+    }
+    #napisz {
+        background-color: lightcoral;
+    }
+    #oddzialy {
+        background-color: cornflowerblue;
+    }
+    .flex-container {
+        display: flex;
+        flex-wrap: wrap; /*gdy się nie miesci to ma zejsć na dół*/
+        /*flex-flow: row-reverse; /*zmieniamy kolejność*/
+        justify-content: center; /*centrowanie*/
+    }
+    .col {
+        width: 24.5%;
+        margin: 0.25%;
+        padding: 1%;
+        box-sizing: border-box; /*wliczamy padding do szerokości width*/
+    }
+
+    @media only screen and (max-width:425px) {
+        .col {
+        width: 100%;
+        }
+    }
+    @media only screen and (min-width:426px) and (max-width:768px) {
+        .col {
+        width: 49.5%;
+        }
+    }
+    @media only screen and (min-width:769px) and (max-width:1024px) {
+        .col {
+        width: 32.5%;
+        }
+    }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="col" id="onas">
+            Jesteśmy partnerem technologicznym i ekspertem w biznesowych projektach internetowych naszych Klientów. Od ponad 10 lat specjalizujemy się w systemach e-commerce i CMS oraz tworzeniu dedykowanych systemów webowych realizujących unikalne potrzeby naszych Klientów.
+            Nasz zespół stanowi blisko 40 specjalistów. 
+            Korzystamy ze sprawdzonych rozwiązań open source: Magento, Akeneo, Symfony, Drupal, eZ. 
+        </div>
+        <div class="col" id="zarzad">
+            Jesteśmy partnerem technologicznym i ekspertem w biznesowych projektach internetowych naszych Klientów. Od ponad 10 lat specjalizujemy się w systemach e-commerce i CMS oraz tworzeniu dedykowanych systemów webowych realizujących unikalne potrzeby naszych Klientów.
+            Nasz zespół stanowi blisko 40 specjalistów. 
+            KorzystamyJesteśmy partnerem technologicznym i ekspertem w biznesowych projektach internetowych naszych Klientów. Od ponad 10 lat specjalizujemy się w systemach e-commerce i CMS oraz tworzeniu dedykowanych systemów webowych realizujących unikalne potrzeby naszych Klientów.
+            Nasz zespół stanowi blisko 40 specjalistów. 
+            KorzystamyJesteśmy partnerem technologicznym i ekspertem w biznesowych projektach internetowych naszych Klientów. Od ponad 10 lat specjalizujemy się w systemach e-commerce i CMS oraz tworzeniu dedykowanych systemów webowych realizujących unikalne potrzeby naszych Klientów.
+            Nasz zespół stanowi blisko 40 specjalistów. 
+            Korzystamy
+        </div>
+        <div class="col" id="napisz">
+            Słupsk
+            siedziba spółki
+            Słupski Inkubator Technologiczny
+            ul. Portowa 13B
+            76-200 SłupskSłupsk
+            siedziba spółki
+            Słupski Inkubator Technologiczny
+            ul. Portowa 13B
+            76-200 Słupsk
+        </div>
+        <div class="col" id="oddzialy">
+            Słupsk
+            siedziba spółki
+            Słupski Inkubator Technologiczny
+            ul. Portowa 13B
+            76-200 Słupsk
+        </div>
+    </div>
+</body>
+</html>

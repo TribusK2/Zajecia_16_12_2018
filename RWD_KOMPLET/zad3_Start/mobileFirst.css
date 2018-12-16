@@ -1,0 +1,102 @@
+body {
+    margin: 0px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+img {
+    content: url("zdjecia/rwd_low.png");
+    min-width: 300px;
+}
+header h1 {
+    background-color: darkolivegreen;
+    color: antiquewhite;
+    text-align: center;
+    margin: 0px;
+    padding: 5px 2px;
+}
+aside h2 {
+    margin: 5px 2px;
+    font-size: 0.85rem;
+}
+article p, aside ul li {
+    font-size: 0.85rem;
+    text-align: justify;
+    padding: 5px;
+    list-style: none;
+}
+article h2 {
+    font-size: 17px;
+    text-align: center;
+    padding: 2px 5px;
+}
+aside ul {
+    margin: 2px 0px;
+    padding-left: 30px;
+}
+aside ul li {
+    padding: 1px;
+}
+[class*="col-span"]{
+    float: right;
+    box-sizing: border-box;
+}
+.sm-col-span-1{
+    width: 33.33%;
+}
+.sm-col-span-2{
+    width: 66.66%;
+}
+.sm-col-span-3{
+    width: 100%;
+}
+
+@media only screen and (min-width:426px) {
+    .md-col-span-1{
+        width: 33.33%;
+    }
+    .md-col-span-2{
+        width: 66.66%;
+    }
+    .md-col-span-3{
+        width: 100%;
+    }
+
+    img {
+        content: url("zdjecia/rwd.png");
+        max-width: 80%;
+        min-width: 10%;
+        margin: 5px auto;
+    }
+    body {
+        margin: 1%;
+    }
+    article h2, aside h2 {
+        font-size: 25px;
+        text-align: center;
+        padding: 2px 5px;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    article {
+        text-align: center;
+    }
+    /*article p:nth-of-type(2) {
+        color: blue;
+        max-height: 300px;
+        overflow-y: scroll;
+        box-sizing: border-box;
+    }
+    img, p:nth-of-type(2) {
+        float: right;
+        
+    }
+    article img {
+        width: 40%;
+    }
+    article p {
+        width: 55%;
+    }
+    aside {
+        clear: both;
+    }*/
+    
+}
